@@ -151,5 +151,5 @@ if __name__ == '__main__':
 	crp_model = CRPClusterModel(1.0, example_likelihood_fn)
 	clustering, cluster_assn = crp_model.cluster(data)
 	means = [numpy.mean(data[list(cluster)]) for cluster in clustering]
-	print 'True means are %s.\nCluster means are %s.' % (true_means, means)	
+	print ('True means are %s.\nCluster means are %s.' % (true_means, means))	
 
